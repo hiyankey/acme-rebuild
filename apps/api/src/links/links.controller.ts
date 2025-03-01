@@ -9,8 +9,8 @@ import {
 } from '@nestjs/common';
 import { LinksService } from './links.service';
 
-import { CreateLinkDto } from '@repo/api/links/dto/create-link.dto';
-import { UpdateLinkDto } from '@repo/api/links/dto/update-link.dto';
+import { CreateLinkDto } from '@acme/api/links/dto/create-link.dto';
+import { UpdateLinkDto } from '@acme/api/links/dto/update-link.dto';
 
 @Controller('links')
 export class LinksController {
