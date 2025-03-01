@@ -1,9 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
-  "globalDependencies": [
-    "**/.env.*local"
+   "globalDependencies": [
+    "**/.env.*local",
+     "**/.env"
   ],
+  "globalEnv": ["DATABASE_URL", "DIRECT_URL"],
   "tasks": {
     "dev": {
         "dependsOn": ["^db:generate"],
@@ -19,7 +21,8 @@
         ".next/**",
         "!.next/cache/**",
         "dist/**"
-      ]
+      ],
+      "env": ["DATABASE_URL", "DIRECT_URL"]
     },
     "lint": {},
     "test": {},
