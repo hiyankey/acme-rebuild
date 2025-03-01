@@ -12,20 +12,19 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@acme/ui": "workspace:*",
     "@acme/db": "workspace:*",
-    "next": "^14.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@acme/ui": "workspace:*",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@jest/globals": "^29.7.0",
-    "@acme/biome-config": "workspace:*",
-    "@playwright/test": "^1.44.0",
     "@acme/api": "workspace:*",
-
+    "@acme/biome-config": "workspace:*",
     "@acme/jest-config": "workspace:*",
     "@acme/typescript-config": "workspace:*",
+    "@jest/globals": "^29.7.0",
+    "@playwright/test": "^1.44.0",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@types/node": "^20.11.24",
